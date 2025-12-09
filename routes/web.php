@@ -19,7 +19,6 @@ use App\Livewire\Auth\Login;
 use App\Livewire\KolomTabel;
 use App\Livewire\HalamanAwal;
 use App\Livewire\KolomDetail;
-use App\Livewire\Tmanagement;
 use App\Livewire\UserProgram;
 use App\Livewire\LoginExample;
 use App\Livewire\TabelSetting;

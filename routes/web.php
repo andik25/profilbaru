@@ -32,7 +32,6 @@ use Illuminate\Auth\Access\Gate;
 use App\Livewire\BootstrapTables;
 use App\Livewire\KomponenProgram;
 use App\Livewire\RegisterExample;
-use App\Livewire\Components\Forms;
 use App\Livewire\DatinkesKategori;
 use App\Livewire\DatinkesKomponen;
 use App\Livewire\Components\Modals;

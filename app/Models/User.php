@@ -1,0 +1,64 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Contracts\Auth\MustVerifyEmail;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\HasOne;
+use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Notifications\Notifiable;
+
+class User extends Authenticatable
+{
+    use HasFactory, Notifiable;
+
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
+ /*    protected $fillable = [
+        'name',
+        'email',
+        'password',
+    ]; */
+    protected $guarded=[];
+    public function desa(): HasOne
+    {
+        return $this->hasOne('App\Models\desa');
+    }
+
+    public function ting(): HasOne
+    {
+        return $this->hasOne('App\Models\TingkatUser', 'id', 'tingkat');
+    }
+
+    public function kecamatan(): HasOne
+    {
+        return $this->hasOne('App\Models\Kecamatan');
+    }
+
+    public function roleuser(): HasOne
+    {
+        return $this->hasOne(RoleProgram::class, 'user_id');
+    }
+    /**
+     * The attributes that should be hidden for arrays.
+     *
+     * @var array
+     */
+    protected $hidden = [
+        'password',
+        'remember_token',
+    ];
+
+    /**
+     * The attributes that should be cast to native types.
+     *
+     * @var array
+     */
+    protected $casts = [
+        'email_verified_at' => 'datetime',
+    ];
+}

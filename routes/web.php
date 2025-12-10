@@ -1,14 +1,8 @@
 <?php
 
-use App\Livewire\Lock;
-use App\Livewire\Index;
-use App\Livewire\Users;
-use App\Livewire\Err404;
-use App\Livewire\Err500;
 use App\Livewire\Profil;
 use App\Livewire\Report;
 use App\Livewire\Laporan;
-use App\Livewire\Profile;
 use App\Livewire\Program;
 use App\Livewire\Kematian;
 use App\Livewire\Dashboard;
@@ -20,29 +14,16 @@ use App\Livewire\KolomTabel;
 use App\Livewire\HalamanAwal;
 use App\Livewire\KolomDetail;
 use App\Livewire\UserProgram;
-use App\Livewire\LoginExample;
 use App\Livewire\TabelSetting;
-use App\Livewire\Transactions;
-use App\Livewire\UpgradeToPro;
 use App\Livewire\Auth\Register;
 use App\Livewire\ManajemenUser;
-use App\Livewire\ResetPassword;
-use App\Livewire\ProfileExample;
-use Illuminate\Auth\Access\Gate;
 use App\Livewire\BootstrapTables;
 use App\Livewire\KomponenProgram;
-use App\Livewire\RegisterExample;
 use App\Livewire\DatinkesKategori;
 use App\Livewire\DatinkesKomponen;
-use App\Livewire\Components\Modals;
-use App\Livewire\Components\Buttons;
 use Illuminate\Support\Facades\Route;
-use App\Livewire\ResetPasswordExample;
-use App\Livewire\Components\Typography;
-use App\Livewire\ForgotPasswordExample;
 use App\Livewire\sampah\ForgotPassword;
 use App\Livewire\MasterKategoriIndikator;
-use App\Livewire\Components\Notifications;
 
 /*
 |--------------------------------------------------------------------------
